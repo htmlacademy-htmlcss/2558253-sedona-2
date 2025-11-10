@@ -36,7 +36,7 @@
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 html {
@@ -100,6 +100,10 @@ select {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.navigation-item {
+  max-width: 200px;
 }
 
 .navigation-user-list {
@@ -216,7 +220,7 @@ select {
 }
 
 .advantage-wide {
-  padding: 104px 85px;
+  padding: 100px 85px;
   width: 400px;
 }
 
@@ -605,6 +609,7 @@ select {
   padding: 8px 50px;
   border: none;
   cursor: pointer;
+  max-width: 250px;
 }
 
 .subscription-email {
