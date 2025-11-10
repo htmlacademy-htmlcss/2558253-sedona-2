@@ -59,7 +59,7 @@
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+                  <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
                 </li>
               </ol>
             </nav>
@@ -105,14 +105,22 @@
               <legend class="price-title filter-group-legend">Стоимость, ₽</legend>
               <div class="price-control">
                 <div class="price-control-from price-field">
-                  <label class="price-label" for="min-price">От</label>
                   <input class="price-field-input price-field-input-from" type="number" name="min-price" id="min-price" placeholder="0"
                     value="0">
+                  <label class="price-label" for="min-price">От</label>
                 </div>
                 <div class="price-control-to price-field">
-                  <label class="price-label" for="max-price">До</label>
                   <input class="price-field-input price-field-input-to" type="number" name="max-price" id="max-price" placeholder="9000"
                     value="9000">
+                  <label class="price-label" for="max-price">До</label>
+                </div>
+              </div>
+              <div class="price-range">
+                <div class="price-range-bar" style="left: 10px; width: 206px;">
+                  <label class="visually-hidden" for="range-bar-min">Установите минимальную стоимость</label>
+                  <input class="range-bar-min range-handle" type="range" id="range-bar-min" min="0" value="0" step="10">
+                  <label class="visually-hidden" for="range-bar-max">Установите максимальную стоимость</label>
+                  <input class="range-bar-max range-handle" type="range" id="range-bar-max" min="0" value="9000" step="10">
                 </div>
               </div>
             </fieldset>
@@ -234,7 +242,7 @@
           <nav class="pagination" aria-label="Пагинация">
             <ul class="pagination-list list">
               <li class="pagination-item pagination-item-current">
-                <a class="pagination-link pagination-link-current" href="#">1</a>
+                <a class="pagination-link pagination-link-current" href="#" tabindex="-1">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
