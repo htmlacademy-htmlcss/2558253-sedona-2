@@ -12,13 +12,11 @@ const counterInputChildren = document.querySelector('.modal-counter-input-childr
 
 modalOpenButton.addEventListener('click', function() {
   modal.classList.remove('modal-close');
-  document.body.style.overflow = 'hidden';
   modal.classList.add('modal-open');
 })
 
 function closeModal() {
   modal.classList.remove('modal-open');
-  document.body.style.overflow = '';
   modal.classList.add('modal-close');
   counterInputAdults.value = '2';
   counterInputChildren.value = '2';
