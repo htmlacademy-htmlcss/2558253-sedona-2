@@ -206,7 +206,7 @@ select {
 
 .transition-text {
   margin: 0 auto 90px;
-  padding: 65px 70px 0;
+  padding: 64px 70px 0;
   max-width: 795px;
 }
 
@@ -286,7 +286,7 @@ select {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
+  padding-top: 5px;
   text-align: center;
 
   color: #333333;
@@ -321,6 +321,7 @@ select {
 .advantages-title,
 .reasons-title {
   margin: 0 auto;
+  padding-top: 2px;
   padding-bottom: 30px;
   max-width: 175px;
   font-family: 'PT Sans';
@@ -399,7 +400,7 @@ select {
 
 .reasons-wrapper {
   margin: 0 auto;
-  padding: 60px 0 64px;
+  padding: 62px 0 42px;
   max-width: 515px;
 }
 
@@ -466,17 +467,19 @@ select {
 .reasons-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
   padding: 81px 85px;
+  padding-top: 106px;
   flex-grow: 1;
 }
 
 .reasons-item:nth-child(even) {
   padding: 81px 85px;
+  padding-top: 106px;
   flex-grow: 1;
 }
 
 .reasons-list .reasons-item {
   background-repeat: no-repeat;
-  background-position: center 55px;
+  background-position: center 80px;
 }
 
 .reasons-list .housing {
@@ -493,7 +496,7 @@ select {
 
 .hotel-search {
   margin: 0 auto 96px;
-  padding: 65px 70px 0;
+  padding: 95px 70px 0;
   max-width: 840px;
 }
 
@@ -595,7 +598,7 @@ select {
 
 .subscription-inner {
   background-color: #ffffff;
-  padding: 96px 0 104px;
+  padding: 35px 0 104px;
 }
 
 .subscription-title-inner,
@@ -635,7 +638,7 @@ input[type="email"] {
 }
 
 .page-footer {
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -740,6 +743,7 @@ input[type="email"] {
 
 .hotels-filter {
   padding: 35px 70px;
+  padding-bottom: 69px;
 
   background-color: #5f9ea0;
   background-image: url("../images/filter-background.jpg");
@@ -854,14 +858,17 @@ input[type="email"] {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
 }
 
 .filter-group-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .filter-housing.filter-group {
-  margin-right: 140px;
+  margin-right: 2px;
 }
 
 .filter-price {
@@ -887,6 +894,11 @@ input[type="email"] {
   line-height: 24px;
   font-weight: 700;
   border: none;
+  background-color: #f2f2f2;
+}
+
+.price-field-input:not(:disabled):focus-visible {
+  background-color: #e6e6e6;
 }
 
 .price-field-input-from {
@@ -919,7 +931,7 @@ input[type="email"] {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-
+  margin: 0;
   color: #ffffff;
 }
 
@@ -1024,8 +1036,8 @@ input[type="email"] {
 .card {
   padding: 20px 18px;
   display: grid;
-  grid-template-columns: 140px 140px;
-  gap: 20px;
+  grid-template-columns: 144px 144px;
+  gap: 16px;
   box-shadow: 0 0 0 1px #e6e6e6;
 }
 
@@ -1043,6 +1055,7 @@ input[type="email"] {
   text-align: start;
   margin: 0;
   color: #000000;
+  padding-left: 3px;
 }
 
 .hotel-title-link {
@@ -1114,7 +1127,7 @@ input[type="email"] {
 .pagination-list {
   display: flex;
   margin: 0;
-  padding: 80px 0 60px;
+  padding: 90px 0 60px;
   gap: 8px;
 }
 
@@ -1223,6 +1236,12 @@ input[type="email"] {
  background-color: #6C9E42;
 }
 
+.logo-link:not(:disabled):focus-visible,
+.navigation-link:not(.navigation-link-current):not(:disabled):focus-visible,
+.navigation-user-link:not(:disabled):not(.button-first):focus-visible {
+  opacity: 0.7;
+}
+
 .navigation-user-link.button-first:disabled,
 .popup-open-button:disabled,
 .more-link:disabled,
@@ -1264,7 +1283,7 @@ input[type="checkbox"] {
   background-color: #ffffff;
   border-radius: 4px;
   padding: 1.5px 0;
-  margin-right: 16px;
+  margin-right: 12px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1276,7 +1295,7 @@ input[type="radio"] {
   background-color: #ffffff;
   border-radius: 50%;
   padding: 1.5px 0;
-  margin-right: 16px;
+  margin-right: 13px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1301,13 +1320,15 @@ input[type="number"]:hover + label {
   opacity: 30%;
 }
 
-input[type="number"]:hover,
-.counter-button:hover {
+input[type="number"]:hover {
   background-color: #e6e6e6;
 }
 
 .counter-button {
   cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
 }
 
 label {
@@ -1487,6 +1508,13 @@ label {
 .modal-counter {
   display: grid;
   grid-template-columns: 40px 31px 40px;
+  place-items: center;
+}
+
+.modal-counter-input-adults,
+.modal-counter-input-children {
+  width: 110px;
+  border-radius: 4px;
 }
 
 .label-tooltip-wrapper {
@@ -1515,7 +1543,7 @@ label {
 .modal-form-input {
   padding: 12px 4px;
   text-align: center;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 .counter-minus {
