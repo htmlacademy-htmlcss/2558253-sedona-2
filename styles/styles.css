@@ -1219,6 +1219,23 @@ input[type="email"] {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.navigation-user-link.button-first:not(:disabled):active,
+.popup-open-button:not(:disabled):active,
+.more-link:not(:disabled):active {
+  background-color: #756157;
+}
+
+.subscription-button:not(:disabled):active,
+.filter-apply-button:not(:disabled):active,
+.add-favorites-button:not(:disabled):active,
+.modal-form-submit-button:not(:disabled):active {
+  background-color: #82b3d3;
+}
+
+.in-favorites-button:not(:disabled):active {
+  background-color: #7db54f;
+ }
+
 .navigation-user-link.button-first:not(:disabled):focus-visible,
 .popup-open-button:not(:disabled):focus-visible,
 .more-link:not(:disabled):focus-visible {
@@ -1301,11 +1318,11 @@ input[type="radio"] {
 }
 
 input[type="checkbox"]:checked {
-  background-image: url("../images/icons/control=checkbox.svg");
+  background-image: url("../images/icons/control-checkbox.svg");
 }
 
 input[type="radio"]:checked {
-  background-image: url("../images/icons/control=radio.svg");
+  background-image: url("../images/icons/control-radio.svg");
 }
 
 .filter-group-item:not(:disabled):hover {
@@ -1445,9 +1462,10 @@ label {
 
 .modal-form {
   display: grid;
-  grid-template-columns: 128px 110px 1fr 116px 110px;
+  grid-template-columns: 128px 110px 1fr 126px;
   grid-template-rows: minmax(48px, auto);
   gap: 16px;
+  column-gap: 12px;
   align-items: baseline;
 }
 
@@ -1462,10 +1480,10 @@ label {
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
   background-size: 16px 15px;
-  background-position: 95% 50%;
+  background-position: 93% 50%;
 
   text-align: start;
-  padding: 12px 51px 12px 20px;
+  padding: 12px 51px 12px 15px;
   position: relative;
   border-radius: 4px;
 }
@@ -1476,6 +1494,7 @@ label {
   font-weight: 700;
   text-transform: capitalize;
   hyphens: auto;
+  padding-top: 15px;
 }
 
 .modal-form-input {
@@ -1495,7 +1514,7 @@ label {
 
 .modal-form-text {
   margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 15px;
   font-size: 16px;
   line-height: 21px;
   text-align: start;
@@ -1517,16 +1536,21 @@ label {
   border-radius: 4px;
 }
 
+.modal-counter-children {
+  padding-left: 14px;
+}
+
 .label-tooltip-wrapper {
-  grid-column-start: 4;
+  grid-column-start: 3;
   display: flex;
+  padding-left: 72px;
 }
 
 .modal-form-submit-button {
   grid-column: 1 /-1;
   border-radius: 10px;
-  padding: 18px;
-  margin-top: 48px;
+  padding: 10px;
+  margin-top: 40px;
   border: none;
   background-color: #82b3d3;
 }
@@ -1588,6 +1612,7 @@ label {
 
 .tooltip {
   position: relative;
+  top:15px;
 }
 
 .tooltip-text {
