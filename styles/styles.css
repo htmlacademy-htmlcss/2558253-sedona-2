@@ -1699,8 +1699,17 @@ label {
   cursor: pointer;
 }
 
+.range-handle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .range-handle:active {
   outline: 2px solid #82b3d3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-handle:focus-visible {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-bar-min {
