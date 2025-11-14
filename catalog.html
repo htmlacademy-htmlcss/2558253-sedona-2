@@ -9,7 +9,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="logo-link" href="index.html" aria-current="page">
           <img class="page-header-logo" src="images/logo-sedona.svg" alt="Логотип городка Седона" width="140"
             height="70">
@@ -47,8 +47,8 @@
         </nav>
       </header>
 
-      <main class="main-inner">
-        <section class="hotels-filter">
+      <main class="main-inner" data-test="main">
+        <section class="hotels-filter" data-test="filter">
           <header class="inner-nav">
             <h1 class="inner-nav-title">Гостиницы Седоны</h1>
             <nav class="breadcrumbs">
@@ -72,15 +72,15 @@
               <ul class="filter-group-list list">
                 <li class="filter-group-item">
                   <input class="amenities-checkbox" type="checkbox" name="pool" id="pool" checked>
-                  <label class="amenities-checkbox" for="pool">Бассейн</label>
+                  <label class="amenities-checkbox-label" for="pool">Бассейн</label>
                 </li>
                 <li class="filter-group-item">
                   <input class="amenities-checkbox" type="checkbox" name="parking" id="parking" checked>
-                  <label class="amenities-checkbox" for="parking">Парковка</label>
+                  <label class="amenities-checkbox-label" for="parking">Парковка</label>
                 </li>
                 <li class="filter-group-item">
                   <input class="amenities-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
-                  <label class="amenities-checkbox" for="wi-fi">Wi-Fi</label>
+                  <label class="amenities-checkbox-label" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -89,15 +89,15 @@
               <ul class="filter-group-list list">
                 <li class="filter-group-item">
                   <input class="housing-checkbox" type="radio" name="housing-type" id="hotel" value="hotel" checked>
-                  <label class="housing-checkbox" for="hotel">Гостиница</label>
+                  <label class="housing-checkbox-label" for="hotel">Гостиница</label>
                 </li>
                 <li class="filter-group-item">
                   <input class="housing-checkbox" type="radio" name="housing-type" id="motel" value="motel">
-                  <label class="housing-checkbox" for="motel">Мотель</label>
+                  <label class="housing-checkbox-label" for="motel">Мотель</label>
                 </li>
                 <li class="filter-group-item">
                   <input class="housing-checkbox" type="radio" name="housing-type" id="apartment" value="apartment">
-                  <label class="housing-checkbox" for="apartment">Апартаменты</label>
+                  <label class="housing-checkbox-label" for="apartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -131,7 +131,7 @@
           </form>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <div class="sort">
             <h2 class="sort-title">Найдено гостиниц:
               <span class="filtered-hotels-number">38</span>
@@ -263,7 +263,7 @@
           </nav>
         </section>
 
-        <section class="subscription subscription-inner">
+        <section class="subscription subscription-inner" data-test="subscribe">
           <h2 class="subscription-title subscription-title-inner">Подпишитесь на рассылку</h2>
           <p class="subscription-content subscription-content-inner">Только полезная информация и никакого спама,
             честное бойскаутское!</p>
@@ -276,7 +276,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="socials-list list">
           <li class="socials-item">
             <a class="socials-link logo-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
