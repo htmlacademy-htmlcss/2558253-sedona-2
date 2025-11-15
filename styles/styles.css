@@ -1501,6 +1501,16 @@ body {
   -webkit-appearance: none;
 }
 
+.modal-form-input,
+.price-field-input {
+  -moz-appearance: textfield;
+}
+
+.range-handle::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+}
+
 .amenities-checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
